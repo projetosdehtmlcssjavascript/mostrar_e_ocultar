@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+        <meta charset="UTF-8">        
+        <title></title>
+ 
+        <script type="text/javascript">
+        function elementoExibir(iddocss){                 
+         if(document.getElementById){
+             var el = document.getElementById(iddocss);
+             el.style.display= (el.style.display == 'none') ? 'block' : 'none';
+         }              
+        }
+             window.onload = function(){
+             elementoExibir('elemento');
+            }
+              
+        </script>
+       
+        <style> 
+            #elemento{
+                background-image:url(https://images.samsung.com/is/image/samsung/africa-pt-galaxy-j6-j600-sm-j600fzvaxfe-frontviolet-117376323?$PD_GALLERY_L_JPG$);   
+                width: 900px;
+                height:700px;
+                diplay:none;
+                background-repeat:no-repeat;    
+                background-size: 900ox 900px;
+                 overflow:auto;
+               
+            }  
+           
+            
+        </style>
+
+<button style='cursor: pointer;' onClick="elementoExibir('elemento')">Mostrar</button>
+<div id="elemento">
+</div>
+
+     
+    
